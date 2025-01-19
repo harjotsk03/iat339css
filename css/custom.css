@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.inTextLink{
+    color: #FF7200;
+    transition: 0.3s ease-in-out all;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.inTextLink:hover,
+.inTextLink:focus{
+    color: #1a6dcb;
+}
+
+.mainElement{
+    border: 0.2rem solid black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    padding-right: 2rem;
+}
+
+.subHeadingMarginTop{
+    margin-top: 1rem;
+}
+
+.paragraphElement{
+    font-size: 1.15rem;
+    max-width: 70%;
+}
+
+.mainHeading{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+
+}
+
+.secondaryMainHeading{
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+
+}
+
+.subHeading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Poppins", serif;
+}
+
+.secondarySubHeading{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.inputLabel{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+}
+
+.input{
+    border-radius: 0.5rem;
+    border: 0.15rem solid black;
+    height: 1.5rem;
+    width: 80%;
+    transition: all ease-in-out 0.3s;
+}
+
+.input:hover,
+.input:focus{
+    border-radius: 10rem;
+}
+
+.imageContainer {
+    width: 50rem;
+    height: auto;
+    display: block;
+}
+
+.imageLink {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.imageClass {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.imageContainer:hover .imageLink,
+.imageContainer:focus .imageLink {
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .paragraphElement{
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+
+    .mainHeading{
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: "Poppins", serif;
+    }
+
+    .secondaryMainHeading{
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: "Poppins", serif;
+
+    }
+
+    .subHeading{
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: italic;
+        font-family: "Poppins", serif;
+
+    }
+
+    .secondarySubHeading{
+        font-size: 0.75rem;
+        font-weight: 700;
+        font-family: "Poppins", serif;
+    }
+
+    .inputLabel{
+        margin: 0 0.5rem;
+        padding: 0;
+        font-family: "Poppins", serif;
+        font-size: 1.75rem;
+    }
+
+    .input{
+        height: 2.5rem;
+        padding-left: 1.5rem;
+        font-size: 1.75rem;
+        width: 90%;
+    }
+
+    .imageContainer {
+        width: 40rem;
+        height: auto;
+        display: block;
+    }
+
+    .imageLink {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
